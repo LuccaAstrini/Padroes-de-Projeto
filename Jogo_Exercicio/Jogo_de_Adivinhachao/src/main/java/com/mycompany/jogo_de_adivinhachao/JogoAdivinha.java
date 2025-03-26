@@ -14,7 +14,7 @@ public abstract class JogoAdivinha {
 
         System.out.println("Tente adivinhar o número!");
 
-        while (!acertou) {
+        while (acertou != true) {
             System.out.print("Seu palpite: ");
             palpite = sc.nextInt();
             acertou = FornecerFeedback(palpite);

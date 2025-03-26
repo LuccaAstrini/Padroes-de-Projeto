@@ -2,17 +2,24 @@ package com.mycompany.jogo_de_adivinhachao;
 
 import static java.lang.Math.random;
 
-public class JogoDificil extends JogoAdivinha{
-    
+public class JogoDificil extends JogoAdivinha {
+
     @Override
     public void InicializarJogo() {
-        int sortear = (int)(Math.random()*100+1);
-        System.out.println("" + sortear);
+        numeroSecreto = (int) (Math.random() * 100 + 1);
+        System.out.println("Número sorteado! (entre 1 e 100)");
     }
 
     @Override
-    public void FornecerFeedback(int palpite) {
-    
+    public boolean FornecerFeedback(int palpite) {
+        if (palpite == numeroSecreto) {
+            return true;
+        } else if (palpite < numeroSecreto) {
+            System.out.println("O número é maior!");
+        } else {
+            System.out.println("O número é menor!");
+        }
+        return false;
     }
-    
+
 }

@@ -1,0 +1,4 @@
+com\mycompany\adapterexemplo\AdapterExemplo.class
+com\mycompany\adapterexemplo\XmlParser.class
+com\mycompany\adapterexemplo\JsonParser.class
+com\mycompany\adapterexemplo\XmlToJsonAdapter.class

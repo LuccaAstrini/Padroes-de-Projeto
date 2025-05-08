@@ -1,0 +1,3 @@
+com\mycompany\adapteremail\AdapterEmail.class
+com\mycompany\adapteremail\ProtocolDeValidacaoDeEmail.class
+com\mycompany\adapteremail\Validador_Email_Adapter.class
